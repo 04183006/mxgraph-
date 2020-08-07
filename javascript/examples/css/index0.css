@@ -1,0 +1,122 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #57c8da;
+}
+
+.header .left {
+    flex: 3.5;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header .left span {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.header .right {
+    flex: 5;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "华文行楷";
+    text-align: center;
+}
+
+.bottom {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    border: 1px solid #dce1e6;
+    background: white;
+}
+
+.footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: rgb(110, 109, 109);
+  
+}
+
+.mxgraph{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 850px;
+    height: 300px;
+    text-align: center;
+    background: #57C8DA;
+    padding: 20px;
+    border-radius: 20px 100px 20px 100px;
+    box-shadow: 0 1px 2px #fff inset, 0 -1px 0 #a8abae inset;
+}
+
+.top{
+    width: 100%;
+    height: 200px;
+    color: white;
+    line-height: 200px;
+    font-size: 66px;
+    font-weight: 900;
+    text-shadow: 5px 5px 5px rgb(8, 7, 7);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    width: 500px;
+    height: 50px;
+    line-height: 20px;
+    margin: 1.5px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #333;
+    border-radius: 5px;
+    color: #8c96a0;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #dce1e6;
+    box-shadow: 0 1px 2px #fff inset, 0 -1px 0 #a8abae inset;
+    background: white;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 30px;
+    outline: none;
+}
+

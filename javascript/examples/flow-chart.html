@@ -1,0 +1,100 @@
+<!--
+  Copyright (c) 2020-08-06 @kangjiahao
+-->
+<html>
+
+<head>
+	<title>A tools for making flow chart _ BY KANG</title>
+	<link rel="stylesheet" href="./css/index.css">
+
+	<script type="text/javascript">
+		mxBasePath = '../src';
+	</script>
+
+
+	<script type="text/javascript" src="../src/js/mxClient.js"></script>
+
+</head>
+
+<body onload="main();">
+	<div class="notice" id="notice">
+
+		<div class="trop" id="trop">x</div>
+		<div class="notice_box">
+			<div class="box" id="box">
+				<div class="inner">
+					<!--轮播图-->
+					<ul>
+						<li><img src="./editors/images/1.jpg" alt=""></li>
+						<li><img src="./editors/images/2.jpg" alt=""></li>
+						<li><img src="./editors/images/3.jpg" alt=""></li>
+
+					</ul>
+
+					<!-- <ol class="bar">
+			 
+					</ol> -->
+					<!--左右焦点-->
+					<div id="arr">
+						<span id="left">
+							< </span> <span id="right">
+								>
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<div class="left">
+				<em>
+					<a href="./index.html">
+                        <span>MXgraph </span>
+					<sub> A tools for making flow chart _ BY KANG</sub>
+                    </a>
+				</em>
+			</div>
+			<div class="right"></div>
+		</div>
+
+		<div class="bottom">
+			<div class="mx_left">
+				<div class="bar">流程图工具栏(Toolbar)</div>
+
+				<div class="graphBar" id="graphBar"></div>
+				<div class="toolBar">
+					<div class="item" id="btn1">
+						<img src="editors/images/fangda.png" alt="">
+					</div>
+					<div class="item" id="btn2">
+						<img src="editors/images/suoxiao.png" alt="">
+					</div>
+					<div class="item" id="btn3">
+						<img src="editors/images/huanyuan.png" alt="">
+					</div>
+					<div class="item" id="btn4">
+						<img src="editors/images/cancel.png" alt="">
+					</div>
+					<div class="item" id="btn5">
+						<img src="editors/images/qingkong.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="mx_right">
+				<div class="graphArea">流程图绘制区域(Draw area)</div>
+				<div class="mxgraph" id="mxgraph"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	document.getElementById('trop').onclick = function(){
+		document.getElementById('notice').style.display = 'none'
+	}
+</script>
+<script src="./js/mxgraph.js"></script>
+<script src="./js/lunbotu.js"></script>
+
+</html>
