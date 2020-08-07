@@ -170,15 +170,13 @@ img.mxToolbarModeSelected {
     height: 100%;
     background: rgba(0,0,0,0.5);
     z-index: 10;
-    display: none;
+    /* display: none; */
 }
 
 .notice_box{
     position: absolute;
-    display: none;
     width: 800px;
     height: 500px;
-    border: 1px solid white;
     left: 50%;
     top: 50%;
     margin-left: -400px;
@@ -188,5 +186,76 @@ img.mxToolbarModeSelected {
 .class222{
     width: 100%;
     height: 500px;
-    border: 2px solid red;
+}
+
+.trop{
+    width: 50px;
+    height: 50px;
+    /* background: white; */
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* 
+    轮播图css
+*/
+.box {
+    width: 800px;
+    height: 500px;
+}
+.inner{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid white;
+}
+.inner img{
+    width: 800px;
+    height: 500px;
+    vertical-align: top
+}
+ul {
+    width: 1000%;
+    position: absolute;
+    list-style: none;
+    left:0;
+    top: 0;
+}
+.inner li{
+    float: left;
+
+}
+
+#arr{
+    display: none;
+}
+#arr span{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    border: 1px solid #fff;
+}
+#arr #right {
+    right: 5px;
+    left: auto;
 }
